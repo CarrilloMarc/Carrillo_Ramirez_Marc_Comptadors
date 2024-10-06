@@ -7,11 +7,15 @@
 En aquesta activitat, se'ns proporciona un codi per al disseny d'una app en android, concretament la d'un marcador.
 Aquest projecte utilitza Gradle per a construir l'aplicació en Android
 Els fitxer i les carpetes més importants son:
-** MainActivity.kt ** : programa per a configurar el que anem a veure per pantalla i definir les funcions dels botons, en aquest cas sumarem, restarem, o reestablirem el contador
-** MostraComptadorActivity ** : programa on definim les funcions per a que les accions que executem, es guarden i es façen definitives al marcador; es guarden els estats
+
+**MainActivity.kt** : programa per a configurar el que anem a veure per pantalla i definir les funcions dels botons, en aquest cas sumarem, restarem, o reestablirem el contador
+
+**MostraComptadorActivity** : programa on definim les funcions per a que les accions que executem, es guarden i es façen definitives al marcador; es guarden els estats
 Aquests dos programes, es troben dins del directori kotlin+java de l'app.
-** ActivityMain.xml ** : arxiu xml on es defineix el disseny del que invoquem al main, en aquest cas dels botons. 
-** Activity_mostra_comptador ** : arxiu xml en el qual es defineix el marcador, tant el de fora de l'activitat com el de dins
+
+**ActivityMain.xml** : arxiu xml on es defineix el disseny del que invoquem al main, en aquest cas dels botons. 
+
+**Activity_mostra_comptador** : arxiu xml en el qual es defineix el marcador, tant el de fora de l'activitat com el de dins
 
 A continuació, expliquem com funcionen les dos funcions les quals s'encarreguen de mantindre l'estat de les activitats, sent aquestes un canvi que es produeix al programa i el qual s'ha de manipular de manera correcta per a que afecte com i quan correspon al propi programa. Aquestes s'escriuen al propi MainActivity.kt, sent aquest l'unic fitxer implicat
 
@@ -33,9 +37,11 @@ Per últim, en quant a la resta de funcions comentades (onStart, onResume, onPau
 
 ### Estructura i modificacions
 Se'ns proporciona un codi en el qual estàn dissenyats els següents botons:
-** Marcador** : Número que es mostra per pantalla, i sobre el qual repercutiràn tots els botons que dissenyem. Té la seua propia classe (mencionada abans); MostraComptadorActivity
-** - ** : És el únic botó que afecta al marcador que ens ve ja fet. Gràcies al codi picat per a programar-lo, tenim exemple de com fer la resta de botons
-** Botons restants ** S'ha efectuat a la creació del boto de resetejar i de sumar al marcador
+**Marcador** : Número que es mostra per pantalla, i sobre el qual repercutiràn tots els botons que dissenyem. Té la seua propia classe (mencionada abans); MostraComptadorActivity
+
+**-** : És el únic botó que afecta al marcador que ens ve ja fet. Gràcies al codi picat per a programar-lo, tenim exemple de com fer la resta de botons
+
+**Botons restants** S'ha efectuat a la creació del boto de resetejar i de sumar al marcador
 
 ### Questió: Per crear una nova activitat, seria suficient amb crear el fitxer XML amb el layout i el fitxer Kotlin amb el codi per gestionar-la?
 No, es deuria declarar al AndroidManifest.xml el propi fitxer kotlin que hauríem de crear per a gestionar l'activitat.
