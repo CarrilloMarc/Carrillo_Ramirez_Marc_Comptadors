@@ -37,6 +37,7 @@ Per últim, en quant a la resta de funcions comentades (onStart, onResume, onPau
 
 ### Estructura i modificacions
 Se'ns proporciona un codi en el qual estàn dissenyats els següents botons:
+
 **Marcador** : Número que es mostra per pantalla, i sobre el qual repercutiràn tots els botons que dissenyem. Té la seua propia classe (mencionada abans); MostraComptadorActivity
 
 **-** : És el únic botó que afecta al marcador que ens ve ja fet. Gràcies al codi picat per a programar-lo, tenim exemple de com fer la resta de botons
