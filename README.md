@@ -23,6 +23,7 @@ A continuació, expliquem com funcionen les dos funcions les quals s'encarreguen
 >        super.onSaveInstanceState(estat)
 >        estat.putInt("Comptador",comptador)
 >    }
+
 >    override fun onRestoreInstanceState(estat: Bundle){
 >        super.onRestoreInstanceState(estat)
 >        comptador=estat.getInt("Comptador")
